@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>SMMЛаб</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <meta content="" name="keywords" />
+        <meta content="" name="description" />
+
+        <!-- Favicon -->
+        <link href="img/favicon.ico" rel="icon" />
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;600;800&family=Roboto:wght@400;500;700&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Icon Font Stylesheet -->
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+            rel="stylesheet"
+        />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+            rel="stylesheet"
+        />
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/animate/animate.min.css" rel="stylesheet" />
+        <link
+            href="lib/owlcarousel/assets/owl.carousel.min.css"
+            rel="stylesheet"
+        />
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <!-- Spinner Start -->
+        <div
+            id="spinner"
+            class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+        >
+            <div class="spinner-grow text-primary" role="status"></div>
+        </div>
+        <!-- Spinner End -->
+
+        <!-- Navbar Start -->
+        <nav
+            class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5"
+        >
+            <a href="index.html" class="navbar-brand d-flex align-items-center">
+                <h1 class="m-0">SMMЛаб</h1>
+            </a>
+            <button
+                type="button"
+                class="navbar-toggler"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarCollapse"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav mx-auto bg-light pe-4 py-3 py-lg-0">
+                    <a href="index.html" class="nav-item nav-link active"
+                        >Главная</a
+                    >
+                    <a href="about.html" class="nav-item nav-link">О нас</a>
+                    <a href="service.html" class="nav-item nav-link"
+                        >Наши услуги</a
+                    >
+                    <div class="nav-item dropdown">
+                        <a
+                            href="#"
+                            class="nav-link dropdown-toggle"
+                            data-bs-toggle="dropdown"
+                            >Страницы</a
+                        >
+                        <div class="dropdown-menu bg-light border-0 m-0">
+                            <a href="quote.html" class="dropdown-item"
+                                >Консультация</a
+                            >
+                            <a href="testimonial.html" class="dropdown-item"
+                                >Отзывы</a
+                            >
+                        </div>
+                    </div>
+                    <a href="contact.html" class="nav-item nav-link"
+                        >Контакты</a
+                    >
+                </div>
+                <div class="h-100 d-lg-inline-flex align-items-center d-none">
+                    +77778000044
+                </div>
+            </div>
+        </nav>
+        <!-- Navbar End -->
+
+        <!-- Carousel Start -->
+        <div class="container-fluid p-0 mb-5">
+            <div
+                id="header-carousel"
+                class="carousel slide"
+                data-bs-ride="carousel"
+            >
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img
+                            class="w-100"
+                            src="img/carousel-1.jpg"
+                            alt="Image"
+                        />
+                        <div class="carousel-caption">
+                            <div class="container">
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-7 pt-5">
+                                        <h1
+                                            class="display-4 text-white mb-4 animated slideInDown"
+                                        >
+                                            Защитите свое будущее с помощью
+                                            экспертов по СММ
+                                        </h1>
+                                        <p
+                                            class="fs-5 text-body mb-4 pb-2 mx-sm-5 animated slideInDown"
+                                        >
+                                            Оставайтесь в курсе последних
+                                            новостей о продвижении в СММ и
+                                            узнайте, как успешно применить план
+                                            продвижения для вашего бизнеса. Наши
+                                            эксперты помогут вам с созданием
+                                            визуального контента, планом
+                                            продвижения и другими стратегиями
+                                            эффективного маркетинга.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img
+                            class="w-100"
+                            src="img/carousel-2.jpg"
+                            alt="Image"
+                        />
+                        <div class="carousel-caption">
+                            <div class="container">
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-7 pt-5">
+                                        <h1
+                                            class="display-4 text-white mb-4 animated slideInDown"
+                                        >
+                                            Профессиональная поддержка в
+                                            продвижении СММ
+                                        </h1>
+                                        <p
+                                            class="fs-5 text-body mb-4 pb-2 mx-sm-5 animated slideInDown"
+                                        >
+                                            Понимание всех тонкостей продвижения
+                                            в СММ с нашей профессиональной
+                                            поддержкой. Мы упростим процесс
+                                            составления плана продвижения,
+                                            создания визуального контента и
+                                            других ключевых шагов для успешного
+                                            маркетинга. Мы поможем вам
+                                            максимально эффективно применить все
+                                            инструменты СММ-стратегии для вашего
+                                            бизнеса.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#header-carousel"
+                    data-bs-slide="prev"
+                >
+                    <span
+                        class="carousel-control-prev-icon"
+                        aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Назад</span>
+                </button>
+                <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#header-carousel"
+                    data-bs-slide="next"
+                >
+                    <span
+                        class="carousel-control-next-icon"
+                        aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Вперед</span>
+                </button>
+            </div>
+        </div>
+        <!-- Carousel End -->
+
+        <!-- Features Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="row g-5">
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <h1 class="display-6 mb-5">
+                            Почему стоит выбрать наше обучение по СММ
+                        </h1>
+                        <p class="mb-5">
+                            Получите непревзойденную поддержку и руководство,
+                            чтобы освоить все тонкости маркетинга в СММ. Наша
+                            команда специалистов гарантирует, что вы будете в
+                            курсе всех новостей и трендов в области
+                            онлайн-продвижения. Мы предоставляем
+                            персонализированные стратегии по созданию
+                            визуального контента и составлению эффективного
+                            плана продвижения для вашего бизнеса.
+                            Зарегистрируйтесь на наше онлайн-обучение и получите
+                            экспертную помощь на всех этапах вашего развития в
+                            СММ.
+                        </p>
+                        <div class="d-flex mb-5">
+                            <div class="ms-4">
+                                <h5 class="mb-3">Надежный центр поддержки</h5>
+                                <span
+                                    >Наш надежный центр поддержки предоставляет
+                                    квалифицированные советы по всем вопросам,
+                                    связанным с СММ-маркетингом. С многолетним
+                                    опытом и глубоким пониманием рынка, наши
+                                    специалисты помогут вам создать эффективный
+                                    план продвижения и успешно реализовать
+                                    его.</span
+                                >
+                            </div>
+                        </div>
+                        <div class="d-flex mb-5">
+                            <div class="ms-4">
+                                <h5 class="mb-3">Доступная цена</h5>
+                                <span
+                                    >Мы уверены, что каждый должен иметь доступ
+                                    к качественному обучению по СММ без
+                                    значительных затрат. Наши услуги
+                                    предлагаются по конкурентным ценам, чтобы вы
+                                    могли получить профессиональную помощь и
+                                    руководство по созданию контента и
+                                    продвижению вашего бизнеса.</span
+                                >
+                            </div>
+                        </div>
+                        <div class="d-flex mb-0">
+                            <div class="ms-4">
+                                <h5 class="mb-3">Поддержка 24/7</h5>
+                                <span
+                                    >Маркетинг в СММ не ограничивается рабочими
+                                    часами, и мы тоже. Наша поддержка 24/7
+                                    обеспечивает доступ к помощи в любое время.
+                                    Получайте актуальные новости и ответы на
+                                    ваши вопросы о продвижении бизнеса в СММ в
+                                    любое время суток.</span
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div
+                            class="position-relative rounded overflow-hidden h-100"
+                            style="min-height: 400px"
+                        >
+                            <img
+                                class="position-absolute w-100 h-100"
+                                src="img/feature.jpg"
+                                alt=""
+                                style="object-fit: cover"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Features End -->
+
+        <!-- Devider Start -->
+        <div class="container-fluid facts my-5 py-5">
+            <div class="container py-5">
+                <div
+                    class="text-center mx-auto wow fadeInUp"
+                    data-wow-delay="0.1s"
+                >
+                    <h1 class="display-6 mb-5 text-white">
+                        Комплексное руководство по продвижению в СММ
+                    </h1>
+                    <p class="mb-5">
+                        Осваивать маркетинг в СММ может быть непросто, но с
+                        правильными рекомендациями и поддержкой вы сможете
+                        обеспечить успешное продвижение вашего бизнеса. Наша
+                        команда предоставляет персонализированное руководство по
+                        созданию плана продвижения, стратегии увеличения охвата
+                        и использованию визуального контента для привлечения
+                        клиентов. Мы обеспечиваем, чтобы у вас были все
+                        необходимые инструменты для эффективной реализации вашей
+                        СММ-стратегии. Оставайтесь в курсе последних новостей и
+                        используйте наш опыт для максимизации результатов вашего
+                        онлайн-продвижения. Зарегистрируйтесь на
+                        онлайн-обучение, чтобы получить индивидуальную помощь и
+                        советы, которые помогут вам принимать обоснованные
+                        решения для успешного развития вашего бизнеса в СММ. Мы
+                        поддержим вас на каждом шаге, от создания стратегии до
+                        применения лучших практик. Давайте вместе обеспечим
+                        успешное будущее вашего бизнеса в СММ.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- Devider End -->
+
+        <!-- Blog Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div
+                    class="text-center mx-auto wow fadeInUp"
+                    data-wow-delay="0.1s"
+                    style="max-width: 500px"
+                >
+                    <h1 class="display-6 mb-5">Наши последние блоги</h1>
+                    <p class="mb-5">
+                        Оставайтесь в курсе последних трендов и советов по СММ и
+                        онлайн-обучению. Наш блог предоставляет ценную
+                        информацию о том, как создавать эффективные планы
+                        продвижения, улучшать визуальный контент для социальных
+                        сетей, а также развивать маркетинговые стратегии в
+                        интернете. Подпишитесь на наше онлайн-обучение, чтобы
+                        получить профессиональные советы и поддержку в области
+                        СММ.
+                    </p>
+                </div>
+                <div class="row g-4 justify-content-center">
+                    <div
+                        class="col-lg-6 col-md-6 wow fadeInUp"
+                        data-wow-delay="0.1s"
+                    >
+                        <div class="service-item">
+                            <img
+                                style="width: 100%"
+                                class="img-fluid"
+                                src="img/blog-1.jpg"
+                                alt=""
+                            />
+                            <div
+                                class="align-items-center bg-light"
+                                style="padding: 20px"
+                            >
+                                <a class="h4"
+                                    >Как создать эффективный план продвижения в
+                                    СММ
+                                </a>
+                                <p class="mt-3">
+                                    Узнайте пошаговый процесс создания успешного
+                                    плана продвижения в СММ. В этом блоге мы
+                                    объясняем, как разработать стратегию,
+                                    подобрать правильные платформы и улучшить
+                                    визуальный контент для привлечения
+                                    аудитории. Оставайтесь в курсе новейших
+                                    тенденций СММ для достижения ваших целей.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="col-lg-6 col-md-6 wow fadeInUp"
+                        data-wow-delay="0.1s"
+                    >
+                        <div class="service-item">
+                            <img
+                                style="width: 100%"
+                                class="img-fluid"
+                                src="img/blog-2.jpg"
+                                alt=""
+                            />
+                            <div
+                                class="align-items-center bg-light"
+                                style="padding: 20px"
+                            >
+                                <a class="h4"
+                                    >Как улучшить визуальный контент для
+                                    социальных сетей
+                                </a>
+                                <p class="mt-3">
+                                    Откройте для себя эффективные методы
+                                    улучшения визуального контента для СММ. В
+                                    этом посте мы делимся стратегиями создания
+                                    привлекательных изображений, видео и
+                                    графики, которые помогут повысить
+                                    вовлеченность вашей аудитории и сделать ваш
+                                    контент более заметным.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="col-lg-6 col-md-6 wow fadeInUp"
+                        data-wow-delay="0.1s"
+                    >
+                        <div class="service-item">
+                            <img
+                                style="width: 100%"
+                                class="img-fluid"
+                                src="img/blog-3.jpg"
+                                alt=""
+                            />
+                            <div
+                                class="align-items-center bg-light"
+                                style="padding: 20px"
+                            >
+                                <a class="h4"
+                                    >Роль СММ в продвижении бизнеса
+                                </a>
+                                <p class="mt-3">
+                                    СММ является неотъемлемой частью успешного
+                                    продвижения бизнеса в интернете. В этом
+                                    блоге мы расскажем о важности использования
+                                    социальных сетей, правильного выбора
+                                    платформ для вашего бренда и эффективных
+                                    методов для увеличения охвата и
+                                    вовлеченности.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="col-lg-6 col-md-6 wow fadeInUp"
+                        data-wow-delay="0.1s"
+                    >
+                        <div class="service-item">
+                            <img
+                                style="width: 100%"
+                                class="img-fluid"
+                                src="img/blog-4.jpg"
+                                alt=""
+                            />
+                            <div
+                                class="align-items-center bg-light"
+                                style="padding: 20px"
+                            >
+                                <a class="h4"
+                                    >Создание успешной стратегии контента для
+                                    социальных сетей
+                                </a>
+                                <p class="mt-3">
+                                    Стратегия контента является основой
+                                    успешного СММ. В этом посте мы рассмотрим,
+                                    как разработать стратегию контента, которая
+                                    будет работать для вашей аудитории, а также
+                                    поделимся советами по созданию и
+                                    распространению качественного контента.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="col-lg-6 col-md-6 wow fadeInUp"
+                        data-wow-delay="0.1s"
+                    >
+                        <div class="service-item">
+                            <img
+                                style="width: 100%"
+                                class="img-fluid"
+                                src="img/blog-5.jpg"
+                                alt=""
+                            />
+                            <div
+                                class="align-items-center bg-light"
+                                style="padding: 20px"
+                            >
+                                <a class="h4"
+                                    >Как анализировать эффективность ваших
+                                    СММ-кампаний
+                                </a>
+                                <p class="mt-3">
+                                    Измерение эффективности СММ-кампаний имеет
+                                    ключевое значение для успешного продвижения.
+                                    В этом блоге мы расскажем, как использовать
+                                    аналитику для оценки ваших усилий в области
+                                    маркетинга, и какие метрики наиболее важны
+                                    для оценки эффективности вашей стратегии.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="col-lg-6 col-md-6 wow fadeInUp"
+                        data-wow-delay="0.1s"
+                    >
+                        <div class="service-item">
+                            <img
+                                style="width: 100%"
+                                class="img-fluid"
+                                src="img/blog-6.jpg"
+                                alt=""
+                            />
+                            <div
+                                class="align-items-center bg-light"
+                                style="padding: 20px"
+                            >
+                                <a class="h4">
+                                    Шаг за шагом: Как использовать аналитические
+                                    инструменты для СММ
+                                </a>
+                                <p class="mt-3">
+                                    Аналитика играет важную роль в успешной
+                                    реализации СММ-кампаний. В этом блоге мы
+                                    рассмотрим, как использовать аналитические
+                                    инструменты для оценки эффективности ваших
+                                    маркетинговых усилий, чтобы максимально
+                                    улучшить вашу стратегию продвижения и
+                                    привлечь больше клиентов.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Blog End -->
+
+        <!-- Footer Start -->
+        <div
+            class="container-fluid bg-dark footer mt-5 pt-5 wow fadeIn"
+            data-wow-delay="0.1s"
+        >
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-md-6">
+                        <h1 class="text-white mb-4">SMMЛаб</h1>
+                        <span
+                            >Подпишитесь на нашу рассылку и следите за нами в
+                            социальных сетях, чтобы быть в курсе последних
+                            новинок в сфере СММ и онлайн-обучения. Если вы
+                            хотите разработать успешный план продвижения или
+                            улучшить визуальный контент для социальных сетей, мы
+                            предоставим все необходимые материалы и советы.
+                            Подпишитесь на наше онлайн-обучение, чтобы получать
+                            индивидуальные рекомендации и поддержку в области
+                            СММ.</span
+                        >
+                    </div>
+                    <div class="col-md-6">
+                        <h5 class="text-light mb-4">Newsletter</h5>
+                        <p>
+                            Подпишитесь на нашу рассылку и следите за нами в
+                            социальных сетях, чтобы быть в курсе последних
+                            новинок в области СММ.
+                        </p>
+                        <div class="position-relative">
+                            <input
+                                class="form-control bg-transparent w-100 py-3 ps-4 pe-5"
+                                type="text"
+                                placeholder="Ваш email"
+                                id="email"
+                            />
+                            <button
+                                type="button"
+                                class="btn btn-primary py-2 px-3 position-absolute top-0 end-0 mt-2 me-2"
+                                id="submit"
+                                onclick="sendForm()"
+                            >
+                                Подписаться
+                            </button>
+                            <div id="result" style="color: red"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <h5 class="text-light mb-4">Контакты</h5>
+                        <p>
+                            <i class="fa fa-map-marker-alt me-3"></i>Абай
+                            даңғылы 143, Алматы 050000, Казахстан
+                        </p>
+                        <p><i class="fa fa-phone-alt me-3"></i>+77778000044</p>
+                        <p>
+                            <i class="fa fa-envelope me-3"></i>smm_lab@gmail.com
+                        </p>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <h5 class="text-light mb-4">Наши услуги</h5>
+                        <a class="btn btn-link" href="about.html">О нас</a>
+                        <a class="btn btn-link" href="services.html"
+                            >Наши услуги</a
+                        >
+                        <a class="btn btn-link" href="contact.html">Контакты</a>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <h5 class="text-light mb-4">Навигация</h5>
+                        <a class="btn btn-link" href="index.html">Главная</a>
+                        <a class="btn btn-link" href="services.html"
+                            >Наши услуги</a
+                        >
+                        <a class="btn btn-link" href="contact.html">Контакты</a>
+                        <a class="btn btn-link" href="terms-of-use.html"
+                            >Условия использования</a
+                        >
+                        <a class="btn btn-link" href="privacy-policy.html"
+                            >Политика конфиденциальности</a
+                        >
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+        <!-- Back to Top -->
+        <a
+            href="#"
+            class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"
+            ><i class="bi bi-arrow-up"></i
+        ></a>
+
+        <!-- Cookie banner -->
+        <div class="cookie-wrapper show">
+            <div>
+                <i class="bx bx-cookie"></i>
+                <h2 style="text-align: center">
+                    Согласие на использование файлов cookie
+                </h2>
+            </div>
+
+            <div class="data">
+                <p>
+                    Этот сайт использует файлы cookie для предоставления вам
+                    превосходного и более релевантного опыта взаимодействия.
+                    <a href="#">Узнать больше...</a>
+                </p>
+            </div>
+
+            <div class="buttons">
+                <button class="cookie-button" id="acceptBtn">Принять</button>
+                <button class="cookie-button" id="declineBtn">Отклонить</button>
+            </div>
+        </div>
+        <!-- End Cookie banner -->
+
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="lib/counterup/counterup.min.js"></script>
+        <script src="lib/parallax/parallax.min.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+        <script src="js/cookiebanner.js"></script>
+        <script src="js/contact-form.js"></script>
+    </body>
+</html>
